@@ -1,0 +1,26 @@
+1509091608638	geckodriver	INFO	geckodriver 0.19.0
+1509091608655	geckodriver	INFO	Listening on 127.0.0.1:25269
+1509091610737	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\Administrator\\AppData\\Local\\Temp\\rust_mozprofile.1i1NP0pl2n8P"
+1509091611101	addons.xpi	WARN	Error parsing extensions state: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [amIAddonManagerStartup.readStartupData]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: loadExtensionState :: line 1554"  data: no] Stack trace: loadExtensionState()@resource://gre/modules/addons/XPIProvider.jsm:1554 < getInstallState()@resource://gre/modules/addons/XPIProvider.jsm:1589 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3109 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2188 < callProvider()@resource://gre/modules/AddonManager.jsm:269 < _startProvider()@resource://gre/modules/AddonManager.jsm:739 < startup()@resource://gre/modules/AddonManager.jsm:906 < startup()@resource://gre/modules/AddonManager.jsm:3090 < observe()@jar:file:///C:/Program%20Files%20(x86)/Mozilla%20Firefox/omni.ja!/components/addonManager.js:65
+1509091611503	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript error: resource://gre/modules/XPCOMUtils.jsm, line 266: TypeError: Cc[aContract] is undefined
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+[Child 20600] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 20600] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1509091613153	Marionette	INFO	Listening on port 25281
+1509091613419	addons.productaddons	WARN	Failed downloading XML, status: 0, reason: error
+1509091613875	Marionette	WARN	TLS certificate errors will be ignored for this session
+1509091613911	Marionette	DEBUG	Register listener.js for window 6442450945
+1509091613911	Marionette	DEBUG	Register listener.js for window 8589934593
+1509091613945	Marionette	DEBUG	Received DOM event "beforeunload" for "http://detectportal.firefox.com/success.txt"
+1509091614130	Marionette	DEBUG	Received DOM event "pagehide" for "http://detectportal.firefox.com/success.txt"
+1509091614130	Marionette	DEBUG	Received DOM event "unload" for "http://detectportal.firefox.com/success.txt"
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript error: https://www.baidu.com/, line 648: ReferenceError: $ is not defined
+JavaScript error: https://www.baidu.com/, line 705: ReferenceError: $ is not defined
+JavaScript error: https://www.baidu.com/, line 718: ReferenceError: initPreload is not defined
+1509091614750	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.baidu.com/"
+1509091614751	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.baidu.com/"
+1509091614796	Marionette	INFO	New connections will no longer be accepted
+[Parent 11476] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
