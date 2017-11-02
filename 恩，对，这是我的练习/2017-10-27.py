@@ -35,12 +35,3 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 
-result = input("请输入我要给你的金额：")
-if int(result) == 20:
-    print("你可以买两个套套")
-elif int(result) ==100:
-    print("你们俩可以吃顿饭，吃顿便宜的")
-elif int(result) == 500:
-    print("对不起，我可能给你不了这么多")
-else:
-    print("想叫我给你钱，开玩笑")
