@@ -14,8 +14,6 @@ class Login(unittest.TestCase):
         self.browser.quit()
     def test_login(self):
         time.sleep(2)
-        # self.browser.find_element_by_xpath('//*[@id="login"]/form/div[1]/p/input').send_keys("admin")
-        # self.browser.find_element_by_xpath('//*[@id="login"]/form/div[2]/p/input').send_keys("123456")
         '''CSS通过TYPE属性来定位'''
         self.browser.find_element_by_css_selector("[type = 'text']").send_keys("admin")
         self.browser.find_element_by_css_selector("[type = 'password' ]").send_keys("123456")
