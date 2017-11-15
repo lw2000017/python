@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/yunzhitingshu.iml" filepath="$PROJECT_DIR$/.idea/yunzhitingshu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../unittest练习/.idea/爬虫练习.iml" filepath="$PROJECT_DIR$/../unittest练习/.idea/爬虫练习.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../项目结构（test）/.idea/项目结构（test）.iml" filepath="$PROJECT_DIR$/../项目结构（test）/.idea/项目结构（test）.iml" />
+    </modules>
+  </component>
+</project>
