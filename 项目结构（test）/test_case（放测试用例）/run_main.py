@@ -5,6 +5,7 @@ import HTMLTestRunner
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 import smtplib
+import sched
 import os
 # 这个是优化版执行所有用例并发送报告，分四个步骤
 # 第一步加载用例
@@ -49,12 +50,12 @@ def get_report_file(report_path):
 def send_mail(sender,psw,receiver,smtpserver,report_file):
     '''发送最新的测试报告内容'''
     #读取测试报告的内容
-    with open(report_file,"rb") as f:
-        mail_body = f.read()
+    # with open(report_file,"rb") as f:
+    #     mail_body = f.read()
     #定义邮件内容
     msg =MIMEMultipart()
     body = MIMEText(mail_body,_subtype='html',_charset='utf-8')
-    msg['Subject'] =u"自动化测试报告"
+    msg['Subject'] =u"截取错误信息"
     msg['from'] = sender
     msg['to'] =receiver
     #加上时间戳
@@ -62,6 +63,7 @@ def send_mail(sender,psw,receiver,smtpserver,report_file):
     msg.attach(body)
     #添加附件
     att = MIMEText(open(report_file,"rb").read(),"base64","utf-8")
+    att = MIMEMultipart()
     att['Content-Type'] = "application/octet-stream"
     att['Content-Disposition'] = 'attachment;filename = "report.html"'
     msg.attach(att)
@@ -84,10 +86,10 @@ if __name__ == '__main__':
     run_case(all_case,report_path)  # 2.执行用例
     # 获取最新的测试报告文件
     report_file = get_report_file(report_path)  # 3.获取最新的测试报告
-    # 邮箱配置
+    邮箱配置
     sender = 'liuwei@zhehekeji.com'
-    psw = 'LWlw1234..++--'
+    psw = 'xxxxxx'
     # 收件人多个时，中间用逗号隔开
-    receiver = '1063681467@qq.com'
+    receiver = 'liuwei@zhehekeji.com'
     smtp_server = "smtp.exmail.qq.com"
     send_mail(sender,psw,receiver,smtp_server,report_file)  # 4.最后一步发送报告，需要发邮件就取消注释
