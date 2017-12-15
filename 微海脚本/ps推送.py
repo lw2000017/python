@@ -38,6 +38,11 @@ for i in lists:
 
 
 
+
+
+
+
+
         for a in text:
             if '"StatusCode":"N"' in a:  # i等于一行的内容
                 # 文件加上时间戳
@@ -104,4 +109,4 @@ if __name__ == '__main__':
 
             # receiver = 'liuwei@zhehekeji.com'
                 smtp_server = "smtp.exmail.qq.com"
-                send_mail(sender, psw, receiver, smtp_server,report_file)
+                # send_mail(sender, psw, receiver, smtp_server,report_file)

@@ -1,7 +1,8 @@
 # -*-encoding:utf-8 -*-
 import http.client
 import urllib.parse
-import time
+
+
 host = "106.ihuyi.com"
 sms_send_uri = "/webservice/sms.php?method=Submit"
 
@@ -33,4 +34,3 @@ if __name__ == '__main__':
     mobile = '15836889160'
     text = "您的验证码是：123456。请不要把验证码泄露给其他人。"
     print(send_sms(text,mobile))
-
