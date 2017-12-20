@@ -13,5 +13,5 @@ print(nowtime)
 
 
 Nowtime = datetime.datetime.now()
-Yestime = time.strftime('%Y-%m-%d',Nowtime + datetime.timedelta(days=-1,))
+Yestime = time.strftime('%Y-%m-%d',Nowtime + datetime.timedelta(days=-1))
 print(Yestime)
